@@ -1,0 +1,32 @@
+:root {
+    --pin-pallete-bg: #fafaf1;
+    --pin-pallete-primary: #204782;
+    --pin-pallete-secondary: #57AAFF;
+    --pin-pallete-accent: #D5A419;
+
+    --bs-body-bg: var(--pin-pallete-bg);
+}
+
+nav.navbar {
+    background-color: var(--pin-pallete-bg);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--pin-pallete-primary);
+    font-weight: 400;
+    /*
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--pin-pallete-primary);
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
+    */
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: var(--pin-pallete-primary);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--pin-pallete-accent);
+}
