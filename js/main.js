@@ -24,7 +24,29 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     /* Lazy image auto-loading */
+    function support_format_webp() {
+      var elem = document.createElement('canvas');
+      if (!!(elem.getContext && elem.getContext('2d'))) {
+        // was able or not to get WebP representation
+        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+      } else {
+        // very old browser like IE 8, canvas not supported
+        return false;
+      }
+    }
+
     var lazyloadImages = document.querySelectorAll(".lazy");
+    var canWebp = support_format_webp();
+
+    var img_path = "./img/";
+    var img_ext;
+
+    if (canWebp) {
+      img_path = img_path + "webp/";
+      img_ext = ".webp";
+    } else {
+      img_ext = ".png";
+    }
 
     if ("IntersectionObserver" in window) {
       // Intersection Observer
@@ -32,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
             var image = entry.target;
-            image.src = image.dataset.src;
+            image.src = img_path + image.dataset.src + img_ext;
             image.classList.remove("lazy");
             imageObserver.unobserve(image);
           }
@@ -55,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
           var scrollTop = window.pageYOffset;
           lazyloadImages.forEach(function(img) {
               if (img.offsetTop < (window.innerHeight + scrollTop)) {
-                img.src = img.dataset.src;
+                img.src = img_path + img.dataset.src + img_ext;
                 img.classList.remove('lazy');
               }
           });
