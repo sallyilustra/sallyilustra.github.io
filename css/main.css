@@ -1,5 +1,6 @@
 :root {
-    --pin-pallete-bg: #fafaf1;
+    /* --pin-pallete-bg: #fafaf1; */
+    --pin-pallete-bg: #fff;
     --pin-pallete-primary: #204782;
     --pin-pallete-secondary: #57AAFF;
     --pin-pallete-accent: #D5A419;
@@ -29,4 +30,11 @@ nav.navbar {
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: var(--pin-pallete-accent);
+}
+
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
 }
