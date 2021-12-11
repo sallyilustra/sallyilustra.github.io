@@ -73,3 +73,12 @@ nav.navbar {
 .img-container:hover .overlay-text {
     opacity: 1;
 }
+
+a.my-link {
+    color: var(--pin-pallete-primary);
+    text-decoration: none;
+}
+
+a.my-link:hover {
+    color: var(--pin-pallete-accent);
+}
