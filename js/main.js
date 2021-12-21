@@ -34,4 +34,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
       return false;
     }
+
+    /* Detect mobile */
+    function isMobile() {
+      try {
+         if(/Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(navigator.userAgent)) {
+          return true;
+         };
+         return false;
+      } catch(e){ console.log("Error in isMobile"); return false; }
+    }
+
+    if (isMobile()) {
+      var links = document.querySelectorAll('.img-container');
+      for (var i = 0; i != links.length; ++i) {
+        links[i].onclick = function() {
+          if (this.firstElementChild.tagName == 'A' && this.classList.contains('ready-to-link')) {
+            location = this.firstElementChild.href;
+          } else {
+            ready = document.getElementsByClassName('ready-to-link');
+            if (ready.length) {
+              ready[0].classList.remove('ready-to-link');
+            }
+            this.classList.add('ready-to-link');
+            return false;
+          }
+        }
+      }
+    }
 })
