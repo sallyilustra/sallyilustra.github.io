@@ -40,8 +40,33 @@ nav.navbar {
     transform: translateY(0); transition: all 0.3s ease-in-out;
 }
 
-.img-container {
+#gallery {
+    max-width: 1200px;
+}
+
+.art {
+    margin-bottom:24px;
+    border-radius: 4px;
+    overflow: hidden;
+
     position: relative;
+}
+
+.art-img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.art-img[data-loaded="false"] {
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.art-img[data-loaded="true"] {
+    opacity: 1;
+    transform: translateY(0);
+    transition: top .7s ease-in-out, left .7s ease-in-out, opacity .7s ease-in-out, transform .7s ease-in-out;
 }
 
 .overlay {
@@ -65,12 +90,12 @@ nav.navbar {
     opacity: 0;
 }
 
-.img-container:hover .overlay {
+.art:hover .overlay {
     /* background-color: rgba(213, 164, 25, 0.6); */
     background-color: rgb(32, 71, 130, 0.6);
 }
 
-.img-container:hover .overlay-text {
+.art:hover .overlay-text {
     opacity: 1;
 }
 

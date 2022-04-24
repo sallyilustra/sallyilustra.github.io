@@ -1,3 +1,18 @@
+var macy = Macy({
+  container: '#gallery',
+  trueOrder: false,
+  waitForImages: false,
+  margin: 24,
+  columns: 3,
+  breakAt: {
+      720: 2,
+      400: 1
+  }
+});
+
+var observer = lozad();
+observer.observe();
+
 var navbar;
 var navbarHeight;
 var lastScrollTop = 0;
@@ -5,13 +20,21 @@ var lastScrollTop = 0;
 function navbarAutoHide() {
   let scrollTop = window.scrollY;
 
-  if (scrollTop > navbarHeight / 2) {
-    if (scrollTop < lastScrollTop) {
-      navbar.classList.remove('scrolled-down');
-      navbar.classList.add('scrolled-up');
-    } else {
-      navbar.classList.remove('scrolled-up');
-      navbar.classList.add('scrolled-down');
+  if ((window.innerHeight + scrollTop) >= document.body.offsetHeight) {
+    // end of page
+    navbar.classList.remove('scrolled-down');
+    navbar.classList.add('scrolled-up');
+  }
+  else
+  {
+    if (scrollTop > navbarHeight / 2) {
+      if (scrollTop < lastScrollTop) {
+        navbar.classList.remove('scrolled-down');
+        navbar.classList.add('scrolled-up');
+      } else {
+        navbar.classList.remove('scrolled-up');
+        navbar.classList.add('scrolled-down');
+      }
     }
   }
 
@@ -70,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     /* Update gallery hover effect on mobile */
     if (isMobile()) {
-      let work = document.querySelectorAll('.img-container');
+      let work = document.querySelectorAll('.art');
       work.forEach(function(item) {
         item.onclick = readyToLink;
       });

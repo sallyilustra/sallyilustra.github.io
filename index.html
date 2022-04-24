@@ -13,14 +13,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <script src="js/main.js"></script>
-        <script src="js/lazysizes.min.js" async=""></script>
         <script src="js/bootstrap.min.js"></script>
-        
+
         <!-- HEADER -->
         <nav class="navbar navbar-expand-md navbar-light bg-inherit fixed-top autohide">
           <div class="container">
@@ -47,241 +45,156 @@
         </nav>
 
         <!-- CONTENT -->
-        <div class="container gallery">
 
-          <div class="row row-cols-1 row-cols-md-2">
-
-            <div class="col mt-2">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/aldeia.webp" type="image/webp" />
-                  <img data-srcset="./img/aldeia.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Aldeia</p>
-                    <p class="fs-4"># Print</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mt-2">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/arvore.webp" type="image/webp" />
-                  <img data-srcset="./img/arvore.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Árvore</p>
-                    <p class="fs-4"># Print</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div id="gallery" class="container">
           
+          <div class="art shadow-sm">
+            <img src="img/aldeia.webp" width="1001" height="1415" class="art-img" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Aldeia</p>
+                <p class="fs-4"># Print</p>
+              </div>
+            </div>
           </div>
 
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-
-            <div class="col mt-3">
-              <div class="img-container">
-                <a href="https://www.instagram.com/p/COvaQg9s_dW/" target="_blank">
-                  <picture>
-                    <source data-srcset="./img/webp/nausica.webp" type="image/webp" />
-                    <img data-srcset="./img/nausica.png" class="img-fluid shadow-sm rounded lazyload" />
-                  </picture>
-                  <div class="overlay">
-                    <div class="overlay-text">
-                      <p class="fs-1 fw-bold">Nausicaä <i class="bi-instagram"></i></p>
-                      <p class="fs-4"># Tote bag</p>
-                    </div>
-                  </div>
-                </a>
+          <div class="art shadow-sm">
+            <img src="img/arvore.webp" width="1001" height="1415" class="art-img" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Árvore</p>
+                <p class="fs-4"># Print</p>
               </div>
             </div>
-
-            <div class="col mt-3">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/cogu.webp" type="image/webp" />
-                  <img data-srcset="./img/cogu.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Chuva</p>
-                    <p class="fs-4"># Print</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mt-3">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/musica.webp" type="image/webp" />
-                  <img data-srcset="./img/musica.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Música</p>
-                    <p class="fs-4"># Print</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mt-3">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/colheita.webp" type="image/webp" />
-                  <img data-srcset="./img/colheita.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Colheita</p>
-                    <p class="fs-4"># Print</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mt-3">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/montanha.webp" type="image/webp" />
-                  <img data-srcset="./img/montanha.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Montanha</p>
-                    <p class="fs-4"># Print</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mt-3">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/amigo.webp" type="image/webp" />
-                  <img data-srcset="./img/amigo.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Amigo</p>
-                    <p class="fs-4"># Print</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          
           </div>
 
-          <div class="row row-cols-1 row-cols-lg-2">
-
-            <div class="col mt-3">
-              <div class="img-container">
-                <a href="https://www.instagram.com/p/CPLcgNAsSVl/" target="_blank">
-                  <picture>
-                    <source data-srcset="./img/webp/frutaria.webp" type="image/webp" />
-                    <img data-srcset="./img/frutaria.png" class="img-fluid shadow-sm rounded lazyload" />
-                  </picture>
-                  <div class="overlay">
-                    <div class="overlay-text">
-                      <p class="fs-1 fw-bold">Frutos Frescos <i class="bi-instagram"></i></p>
-                      <p class="fs-4"># Pintura</p>
-                    </div>
-                  </div>
-                </a>
+          <div class="art shadow-sm">
+            <a href="https://www.instagram.com/p/COvaQg9s_dW/" target="_blank">
+              <img src="img/nausica.webp" width="1001" height="1001" class="art-img" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <p class="fs-1 fw-bold">Nausicaä <i class="bi-instagram"></i></p>
+                  <p class="fs-4"># Tote bag</p>
+                </div>
               </div>
-            </div>
-
-            <div class="col mt-3">
-              <div class="img-container">
-                <a href="https://www.instagram.com/p/CEw1IysFkBQ/" target="_blank">
-                  <picture>
-                    <source data-srcset="./img/webp/cores.webp" type="image/webp" />
-                    <img data-srcset="./img/cores.png" class="img-fluid shadow-sm rounded lazyload" />
-                  </picture>
-                  <div class="overlay">
-                    <div class="overlay-text">
-                      <p class="fs-1 fw-bold">As minhas cores Favoritas <i class="bi-instagram"></i></p>
-                      <p class="fs-4"># Livro ilustrado</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
+            </a>
           </div>
 
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-4">
+          <div class="art shadow-sm">
+            <img src="img/cogu.webp" width="1000" height="1000" class="art-img" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Chuva</p>
+                <p class="fs-4"># Print</p>
+              </div>
+            </div>
+          </div>
 
-            <div class="col mt-3">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/kiki.webp" type="image/webp" />
-                  <img data-srcset="./img/kiki.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Kiki</p>
-                    <p class="fs-4"># Tote bag</p>
-                  </div>
+
+          <div class="art shadow-sm">
+            <img src="img/musica.webp" width="1001" height="1001" class="art-img" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Música</p>
+                <p class="fs-4"># Print</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="art shadow-sm">
+            <img src="img/colheita.webp" width="1001" height="1001" class="art-img" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Colheita</p>
+                <p class="fs-4"># Print</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="art shadow-sm">
+            <img src="img/montanha.webp" width="1001" height="1001" class="art-img" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Montanha</p>
+                <p class="fs-4"># Print</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="art shadow-sm">
+            <img src="img/amigo.webp" width="1000" height="1000" class="art-img" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Amigo</p>
+                <p class="fs-4"># Print</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="art shadow-sm">
+            <a href="https://www.instagram.com/p/CPLcgNAsSVl/" target="_blank">
+              <img src="img/frutaria.webp" width="1001" height="791" class="art-img" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <p class="fs-1 fw-bold">Frutos Frescos <i class="bi-instagram"></i></p>
+                  <p class="fs-4"># Pintura</p>
                 </div>
               </div>
-            </div>
+            </a>
+          </div>
 
-            <div class="col mt-3">
-              <div class="img-container">
-                <a href="https://www.instagram.com/p/CRw4jKPs45q/" target="_blank">
-                  <picture>
-                    <source data-srcset="./img/webp/spirited.webp" type="image/webp" />
-                    <img data-srcset="./img/spirited.png" class="img-fluid shadow-sm rounded lazyload" />
-                  </picture>
-                  <div class="overlay">
-                    <div class="overlay-text">
-                      <p class="fs-1 fw-bold">Spirited Away x Totoro <i class="bi-instagram"></i></p>
-                      <p class="fs-4"># Tote bag</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col mt-3">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/godmother.webp" type="image/webp" />
-                  <img data-srcset="./img/godmother.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Godmother</p>
-                    <p class="fs-4"># Tote bag</p>
-                  </div>
+          <div class="art shadow-sm">
+            <a href="https://www.instagram.com/p/CEw1IysFkBQ/" target="_blank">
+              <img data-loaded="false" data-src="img/cores.webp" width="1001" height="770" class="art-img lozad" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <p class="fs-1 fw-bold">As minhas cores Favoritas <i class="bi-instagram"></i></p>
+                  <p class="fs-4"># Livro ilustrado</p>
                 </div>
               </div>
-            </div>
+            </a>
+          </div>
 
-            <div class="col mt-3">
-              <div class="img-container">
-                <picture>
-                  <source data-srcset="./img/webp/maquina.webp" type="image/webp" />
-                  <img data-srcset="./img/maquina.png" class="img-fluid shadow-sm rounded lazyload" />
-                </picture>
-                <div class="overlay">
-                  <div class="overlay-text">
-                    <p class="fs-1 fw-bold">Máquina de Costura</p>
-                    <p class="fs-4"># Tote bag</p>
-                  </div>
-                </div>
+          <div class="art shadow-sm">
+            <img data-loaded="false" data-src="img/kiki.webp" width="1001" height="1001" class="art-img lozad" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Kiki</p>
+                <p class="fs-4"># Tote bag</p>
               </div>
             </div>
+          </div>
 
+          <div class="art shadow-sm">
+            <a href="https://www.instagram.com/p/CRw4jKPs45q/" target="_blank">
+              <img data-loaded="false" data-src="img/spirited.webp" width="1001" height="1001" class="art-img lozad" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <p class="fs-1 fw-bold">Spirited Away x Totoro <i class="bi-instagram"></i></p>
+                  <p class="fs-4"># Tote bag</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="art shadow-sm">
+            <img data-loaded="false" data-src="img/godmother.webp" width="1001" height="1001" class="art-img lozad" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Godmother</p>
+                <p class="fs-4"># Tote bag</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="art shadow-sm">
+            <img data-loaded="false" data-src="img/maquina.webp" width="1001" height="1001" class="art-img lozad" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <p class="fs-1 fw-bold">Máquina de Costura</p>
+                <p class="fs-4"># Tote bag</p>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -300,5 +213,8 @@
           </footer>
         </div>
 
+        <script src="js/macy.js"></script>
+        <script src="js/lozad.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
